@@ -1,0 +1,269 @@
+
+@font-face {
+    font-family: FontName;
+    src: url(/fonts/RedHatText-Italic-VariableFont_wght.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: FontName , sans-serif;
+}
+#nav-food *{
+    margin: auto;
+    text-align: center;
+    
+}
+#nav-food{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(103, 117, 134);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.logo{
+    width: 15%;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.nav-bar{
+    width: 50%;
+}
+ul , li{
+    display: inline;
+    word-spacing: 50px;
+    font-size: 1.3rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(237, 154, 29);
+    font-weight: bold;
+}
+.search{
+    width: 15%;
+}
+input[type='search']{
+    width: 100%;
+    height: 40px;
+    border: solid;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.main{
+    width: 100%;
+    height: 2000px;
+    /* border: solid; */
+    /* background-color: slategrey; */
+    margin-top: 100px;
+}
+.row-food{
+    width: 96%;
+    height: 100%;
+    margin-left: 2%;
+    /* border: solid; */
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cart-foot{
+    width: 23%;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(247, 237, 237);
+    /* border: solid; */
+   
+}
+.img-foot img{
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.btn-foot{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.add-foot , .delet-foot{
+    width: 44%;
+    height: 100%;
+    /* border: solid; */
+    line-height: 40px;
+
+    border-radius: 20px;
+}
+.add-foot{
+    background-color: palevioletred;
+}
+.delet-foot{
+    background-color: darkcyan;
+}
+.add-foot p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.delet-foot p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-foot{
+    margin-top: 10px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+span{
+    color: brown;
+    font-size: 20px;
+    font-weight:bold ;
+}
+
+
+
+.footer{
+    margin-top: 28px;
+    width: 100%;
+    height: 100px;
+    /* border: solid; */
+    background-color: rgb(9, 9, 15);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text , .footer-icon{
+    width: 48%;
+    height: 100%;
+    /* border: solid; */
+    /* background-color: bisque; */
+    
+}
+.footer-text h2{
+    line-height: 80px;
+    color: white;
+    margin-left: 40px;
+
+}
+
+.footer-i li{
+    line-height: 80px;
+    /* color: white; */
+    margin-left: 40px;
+}
+ i:hover{
+    width: 50px;
+    font-weight: bold;
+    text-decoration-line: none;
+} 
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px)
+{
+    .main {
+        /* flex-direction: column; */
+        background:lightblue;
+        height: 100%;
+
+        
+    }
+    .cart-foot {
+        /* width: calc((100% - 10px)/4); */
+        width: 32%;
+        height: 400px;
+        background: darkorchid;
+        margin-top: 20px;
+    }
+    .footer{
+        
+        height: 170px;
+        display: flex; 
+    }
+    .footer-icon{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 992px)
+{
+    .main {
+        background:lightblue;
+        width: 100%;
+        height: 100%;
+
+        
+    }
+    .cart-foot {
+        width: 45%;
+        height: 400px;
+        background: rgb(80, 180, 180);
+        margin-top: 20px;
+    }
+    .footer{
+        
+         height: 250px;
+         display: flex;
+         
+    }
+    /* .footer-text{
+        width: 60%;
+    }
+    .footer-icon{
+        width: 30%;
+    } */
+
+}
+
+@media screen and (min-width:0px) and (max-width: 768px) 
+{
+    .main {
+        flex-direction: column;
+        background:lightgray;
+        height: 100%;
+      
+    }
+    .cart-foot {
+        width: 100%;
+        height: 400px;
+        background: rgb(152, 85, 219);
+        margin-top: 20px;
+    }
+
+    
+    
+    
+    /* .footer-text{
+        width: 65%;
+    }
+    .footer-icon{
+        width: 30%;
+    } */
+
+}
+
+.dark
+{
+    background-color: black;
+    color: #fff;
+}
+
+.dark .cart-foot .text-foot h3{
+    color: brown;
+}
+.light{
+    background-color: #fff;
+    color: black;
+}
